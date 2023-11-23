@@ -10,8 +10,8 @@ class Cylinder():
     def __init__(self, height, radius):
         self.height = height
         self.radius = radius
-        self.surface_area = None
-        self.volume = None
+        self.surface_area = self.get_volume()
+        self.volume = self.get_volume()
 
     def get_surface_area(self):
         self.surface_area = (2* np.pi * self.radius * self.height) + 2*np.pi + self.radius**2
